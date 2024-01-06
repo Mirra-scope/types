@@ -9,3 +9,4 @@ export { DecodeJwtTokenInput } from "./user";
 export { AuthTokenOutput } from "./user";
 export { DecodeJwtTokenOutput } from "./user";
 export { UserAccountStatusEnum } from "./user";
+export { CheckUserExistByEmailInput } from "./user";
