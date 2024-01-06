@@ -16,3 +16,11 @@ export { ImageIdOutput } from "./ImageOutput.dto";
 export { Movie } from "./Movie.entity";
 export { CreateMovieInput } from "./MovieInput.dto";
 export { ImageMimeType } from "./types";
+
+export { VideoResource } from "./MediaResource.entity";
+export { CreateVideoResourceInput } from "./MediaResourceInput.dto";
+export { RetrieveS3ObjectKeyAndUrlOutput } from "./MediaResourceOutput.dto";
+export { Video } from "./Video.entity";
+export { VideoQualityEnum } from "./Video.enum";
+export { GetUploadVideoSignedUrlInput } from "./VideoInput.dto";
+export { UploadVideoSignedUrlOutput } from "./VideoOutput.dto";
