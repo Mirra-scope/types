@@ -4,15 +4,15 @@ import { MovieGenriesEnum, MovieStatusEnum } from "./AddtionalInfo.enum";
 
 @ObjectType()
 export class AdditionalInfo extends EntityBase {
-  @Field()
+  @Field(() => String)
   originCountry!: MediaCountriesEnum;
-
-  @Field()
+  
+  @Field(() => String)
   originalLanguage!: MediaLanguagiesEnum;
-
-  @Field()
+  
+  @Field(() => String)
   genre!: MovieGenriesEnum;
-
-  @Field()
+  
+  @Field(() => String)
   status!: MovieStatusEnum;
 }

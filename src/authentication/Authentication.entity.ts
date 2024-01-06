@@ -16,6 +16,6 @@ export class User extends EntityBase {
   @Field(() => Boolean)
   isManager!: boolean;
 
-  @Field()
+  @Field(() => Number)
   lastSignIn!: number;
 }

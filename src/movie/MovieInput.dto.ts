@@ -1,21 +1,26 @@
 /* eslint-disable @typescript-eslint/no-namespace */
 
 import { Field, InputType } from "@nestjs/graphql";
-import { IsNotEmpty, IsObject, IsUUID } from "class-validator";
+import { IsNotEmpty, IsObject, IsString, IsUUID } from "class-validator";
 import { CreateAdditionalInfoInput } from "./AdditionalInfoInput.dto";
 import { CreateFinancialInfoInput } from "./FinancialInfoInput.dto";
 
 @InputType()
 export class CreateMovieInput {
   @Field(() => String)
+  @IsNotEmpty()
+  @IsString()
   Title!: string;
-
+  
   // have default value
   @Field(() => String)
+  @IsNotEmpty()
+  @IsString()
   PlotSummary!: string;
-
-  @Field()
+  
   @Field(() => Number)
+  @IsNotEmpty()
+  @IsString()
   ReleaseDate!: number;
 
   @Field(() => String)

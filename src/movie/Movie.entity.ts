@@ -3,21 +3,21 @@ import { EntityBase } from "..";
 
 @ObjectType()
 export class Movie extends EntityBase {
-  @Field()
+  @Field(() => String)
   title!: string;
 
-  @Field()
+  @Field(() => String)
   plotSummary!: string;
 
-  @Field()
+  @Field(() => Number)
   releaseDate!: number;
 
-  @Field()
+  @Field(() => Number)
   priceInDollar!: number;
 
-  @Field()
+  @Field(() => Boolean)
   isFree!: boolean;
 
-  @Field()
+  @Field(() => String)
   userId!: string;
 }
