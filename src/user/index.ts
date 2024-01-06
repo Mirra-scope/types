@@ -1,10 +1,5 @@
-export { UserEntity } from "./User.entity";
-export { UserRegisterInput } from "./UserInput.dto";
-export { UserSignInInput } from "./UserInput.dto";
-export { PromoteUserToManagerInput } from "./UserInput.dto";
-export { CheckUserExistByEmailInput } from "./UserInput.dto";
-export { DecodeJwtTokenInput } from "./UserInput.dto";
-export { AuthTokenOutput } from "./UserOutput.dto";
-export { DecodeJwtTokenOutput } from "./UserOutput.dto";
-export { CheckUserExistByEmailOutput } from "./UserOutput.dto";
-export { UserAccountStatusEnum } from "./user.enum";
+export { ProfileInfo } from "./Profile.entity";
+export { GenderEnum } from "./Profile.enum";
+export { UserActivity } from "./UserActivity.entity";
+export { ActivityActionEnum } from "./UserActivity.enum";
+export { ActivityStatusEnum } from "./UserActivity.enum";

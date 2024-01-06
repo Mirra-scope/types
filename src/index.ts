@@ -1,13 +1,19 @@
 export { EntityBase } from "./common/EntityBase";
 export { SuccessOutput } from "./common/CommonOutput.dto";
 
-export { UserEntity } from "./user";
-export { UserRegisterInput } from "./user";
-export { UserSignInInput } from "./user";
-export { PromoteUserToManagerInput } from "./user";
-export { DecodeJwtTokenInput } from "./user";
-export { AuthTokenOutput } from "./user";
-export { DecodeJwtTokenOutput } from "./user";
-export { UserAccountStatusEnum } from "./user";
-export { CheckUserExistByEmailInput } from "./user";
-export { CheckUserExistByEmailOutput } from "./user";
+export { User } from "./authentication";
+export { UserRegisterInput } from "./authentication";
+export { UserSignInInput } from "./authentication";
+export { PromoteUserToManagerInput } from "./authentication";
+export { DecodeJwtTokenInput } from "./authentication";
+export { AuthTokenOutput } from "./authentication";
+export { DecodeJwtTokenOutput } from "./authentication";
+export { UserAccountStatusEnum } from "./authentication";
+export { CheckUserExistByEmailInput } from "./authentication";
+export { CheckUserExistByEmailOutput } from "./authentication";
+
+export { ProfileInfo } from "./user";
+export { GenderEnum } from "./user";
+export { UserActivity } from "./user";
+export { ActivityActionEnum } from "./user";
+export { ActivityStatusEnum } from "./user";

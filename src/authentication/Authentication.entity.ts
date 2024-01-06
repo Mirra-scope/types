@@ -1,9 +1,9 @@
 import { ObjectType, Field } from "@nestjs/graphql";
 import { EntityBase } from "../common/EntityBase";
-import { UserAccountStatusEnum } from "./user.enum";
+import { UserAccountStatusEnum } from "./Authentication.enum";
 
 @ObjectType()
-export class UserEntity extends EntityBase {
+export class User extends EntityBase {
   @Field(() => String)
   email!: string;
   
