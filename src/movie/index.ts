@@ -16,6 +16,7 @@ export { ImageIdOutput } from "./ImageOutput.dto";
 export { Movie } from "./Movie.entity";
 export { CreateMovieInput } from "./MovieInput.dto";
 export { ImageMimeType } from "./types";
+export { VideoMineType } from "./types";
 
 export { VideoResource } from "./MediaResource.entity";
 export { CreateVideoResourceInput } from "./MediaResourceInput.dto";

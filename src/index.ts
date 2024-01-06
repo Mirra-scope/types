@@ -40,6 +40,7 @@ export { ImageIdOutput } from "./movie";
 export { Movie } from "./movie";
 export { CreateMovieInput } from "./movie";
 export { ImageMimeType } from "./movie";
+export { VideoMineType } from "./movie";
 export { VideoResource } from "./movie";
 export { CreateVideoResourceInput } from "./movie";
 export { RetrieveS3ObjectKeyAndUrlOutput } from "./movie";
