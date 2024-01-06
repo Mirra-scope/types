@@ -6,4 +6,5 @@ export { CheckUserExistByEmailInput } from "./UserInput.dto";
 export { DecodeJwtTokenInput } from "./UserInput.dto";
 export { AuthTokenOutput } from "./UserOutput.dto";
 export { DecodeJwtTokenOutput } from "./UserOutput.dto";
+export { CheckUserExistByEmailOutput } from "./UserOutput.dto";
 export { UserAccountStatusEnum } from "./user.enum";
