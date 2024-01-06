@@ -1,5 +1,6 @@
 export { EntityBase } from "./common/EntityBase";
 export { SuccessOutput } from "./common/CommonOutput.dto";
+export { CurrentUserType } from "./common/types";
 
 export { User } from "./authentication";
 export { UserRegisterInput } from "./authentication";
