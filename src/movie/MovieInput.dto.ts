@@ -8,6 +8,17 @@ import { CreateFinancialInfoInput } from "./FinancialInfoInput.dto";
 @InputType()
 export class CreateMovieInput {
   @Field(() => String)
+  Title!: string;
+
+  // have default value
+  @Field(() => String)
+  PlotSummary!: string;
+
+  @Field()
+  @Field(() => Number)
+  ReleaseDate!: number;
+
+  @Field(() => String)
   @IsNotEmpty()
   @IsUUID()
   VideoId!: string;

@@ -31,7 +31,7 @@ export class CreateAdditionalInfoInput {
 export class UpdateAdditionalInfoInput extends CreateAdditionalInfoInput {}
 
 @InputType()
-export class GetAdditionalInfoByMovieIdIdParams {
+export class GetAdditionalInfoByMovieIdParams {
   @Field(() => String)
   @IsNotEmpty()
   @IsUUID()

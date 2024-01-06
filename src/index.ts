@@ -24,7 +24,7 @@ export { ActivityStatusEnum } from "./user";
 
 export { AdditionalInfo } from "./movie";
 export { CreateAdditionalInfoInput } from "./movie";
-export { GetAdditionalInfoByMovieIdIdParams } from "./movie";
+export { GetAdditionalInfoByMovieIdParams } from "./movie";
 export { UpdateAdditionalInfoInput } from "./movie";
 export { MovieGenriesEnum } from "./movie";
 export { MovieStatusEnum } from "./movie";

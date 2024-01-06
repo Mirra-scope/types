@@ -1,6 +1,6 @@
 export { AdditionalInfo } from "./AdditionalInfo.entity";
 export { CreateAdditionalInfoInput } from "./AdditionalInfoInput.dto";
-export { GetAdditionalInfoByMovieIdIdParams } from "./AdditionalInfoInput.dto";
+export { GetAdditionalInfoByMovieIdParams } from "./AdditionalInfoInput.dto";
 export { UpdateAdditionalInfoInput } from "./AdditionalInfoInput.dto";
 export { MovieGenriesEnum } from "./AddtionalInfo.enum";
 export { MovieStatusEnum } from "./AddtionalInfo.enum";
