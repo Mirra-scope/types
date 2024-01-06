@@ -15,3 +15,8 @@ export class DecodeJwtTokenOutput {
   @Field(() => String)
   ID!: string;
 }
+@ObjectType()
+export class CheckUserExistByEmailOutput {
+  @Field(() => Boolean)
+  isExist!: boolean;
+}
