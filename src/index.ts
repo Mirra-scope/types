@@ -101,7 +101,7 @@ export { Image as TrailerImage } from "./trailer";
 export { ImageVariantEnum as TrailerImageVariantEnum } from "./trailer";
 export { ChangeThumbnailImageInput as TrailerChangeThumbnailImageInput } from "./trailer";
 export { CreateImageInput as TrailerCreateImageInput } from "./trailer";
-export { GetImageBySeriesIdParams as TrailerGetImageBySeriesIdParams } from "./trailer";
+export { GetImageByTrailerIdParams as TrailerGetImageByTrailerIdParams } from "./trailer";
 export { UpdateImageInput as TrailerUpdateImageInput } from "./trailer";
 export { ImageIdOutput as TrailerImageIdOutput } from "./trailer";
 export { Video as TrailerVideo } from "./trailer";

@@ -4,7 +4,7 @@ export { Image } from "./Image.entity";
 export { ImageVariantEnum } from "./Image.enum";
 export { ChangeThumbnailImageInput } from "./ImageInput.dto";
 export { CreateImageInput } from "./ImageInput.dto";
-export { GetImageBySeriesIdParams } from "./ImageInput.dto";
+export { GetImageByTrailerIdParams } from "./ImageInput.dto";
 export { UpdateImageInput } from "./ImageInput.dto";
 export { ImageIdOutput } from "./ImageOutput.dto";
 export { Video } from "./Video.entity";
