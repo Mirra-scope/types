@@ -17,7 +17,7 @@ export { Image } from "./Image.entity";
 export { ImageVariantEnum } from "./Image.enum";
 export { ChangeThumbnailImageInput } from "./ImageInput.dto";
 export { CreateImageInput } from "./ImageInput.dto";
-export { GetImageByMovieIdParams } from "./ImageInput.dto";
+export { GetImageBySeriesIdParams } from "./ImageInput.dto";
 export { UpdateImageInput } from "./ImageInput.dto";
 export { ImageIdOutput } from "./ImageOutput.dto";
 export { Season } from "./Season.entity";

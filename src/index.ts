@@ -70,7 +70,7 @@ export { Image as SeriesImage } from "./series";
 export { ImageVariantEnum as SeriesImageVariantEnum } from "./series";
 export { ChangeThumbnailImageInput as SeriesChangeThumbnailImageInput } from "./series";
 export { CreateImageInput as SeriesCreateImageInput } from "./series";
-export { GetImageByMovieIdParams as SeriesGetImageByMovieIdParams } from "./series";
+export { GetImageBySeriesIdParams as SeriesGetImageBySeriesIdParams } from "./series";
 export { UpdateImageInput as SeriesUpdateImageInput } from "./series";
 export { ImageIdOutput as SeriesImageIdOutput } from "./series";
 export { Season as SeriesSeason } from "./series";
