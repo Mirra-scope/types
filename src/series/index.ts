@@ -36,7 +36,6 @@ export { GetManagerSeriesForTableInput } from "./SeriesInput.dto";
 export { UpdateSeriesInput } from "./SeriesInput.dto";
 export { UpdateSeriesParams } from "./SeriesInput.dto";
 export { Video } from "./Video.entity";
-export { VideoQualityEnum } from "./Video.enum";
 export { GetUploadVideoSignedUrlInput } from "./VideoInput.dto";
 export { UploadVideoSignedUrlOutput } from "./VideoOutput.dto";
 export { VideoResource } from "./VideoResource.entity";

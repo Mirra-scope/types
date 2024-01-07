@@ -4,6 +4,7 @@ export { CurrentUserType } from "./common/types";
 export { DimentionType } from "./common/types";
 export { MediaCountriesEnum } from "./common/enum";
 export { MediaLanguagiesEnum } from "./common/enum";
+export { VideoQualityEnum } from "./common/enum";
 
 export { User } from "./authentication";
 export { UserRegisterInput } from "./authentication";
@@ -45,11 +46,8 @@ export { VideoResource as MovieVideoResource } from "./movie";
 export { CreateVideoResourceInput as MovieCreateVideoResourceInput } from "./movie";
 export { RetrieveS3ObjectKeyAndUrlOutput as MovieRetrieveS3ObjectKeyAndUrlOutput } from "./movie";
 export { Video as MovieVideo } from "./movie";
-export { VideoQualityEnum as MovieVideoQualityEnum } from "./movie";
 export { GetUploadVideoSignedUrlInput as MovieGetUploadVideoSignedUrlInput } from "./movie";
 export { UploadVideoSignedUrlOutput as MovieUploadVideoSignedUrlOutput } from "./movie";
-
-
 
 export { AdditionalInfo as SeriesAdditionalInfo } from "./series";
 export { CreateAdditionalInfoInput as SeriesCreateAdditionalInfoInput } from "./series";
@@ -89,7 +87,6 @@ export { GetManagerSeriesForTableInput as SeriesGetManagerSeriesForTableInput } 
 export { UpdateSeriesInput as SeriesUpdateSeriesInput } from "./series";
 export { UpdateSeriesParams as SeriesUpdateSeriesParams } from "./series";
 export { Video as SeriesVideo } from "./series";
-export { VideoQualityEnum as SeriesVideoQualityEnum } from "./series";
 export { GetUploadVideoSignedUrlInput as SeriesGetUploadVideoSignedUrlInput } from "./series";
 export { UploadVideoSignedUrlOutput as SeriesUploadVideoSignedUrlOutput } from "./series";
 export { VideoResource as SeriesVideoResource } from "./series";
