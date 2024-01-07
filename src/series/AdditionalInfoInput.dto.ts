@@ -1,6 +1,6 @@
 import { IsEnum, IsNotEmpty, IsOptional, IsUUID } from "class-validator";
 import { Field, InputType } from "@nestjs/graphql";
-import { MovieGenriesEnum, MovieStatusEnum } from "./AddtionalInfo.enum";
+import { SeriesGenriesEnum, SeriesStatusEnum } from "./AddtionalInfo.enum";
 import { MediaCountriesEnum, MediaLanguagiesEnum } from "../common/enum";
 
 @InputType()
@@ -17,22 +17,22 @@ export class CreateAdditionalInfoInput {
 
   @Field(() => String, { nullable: true })
   @IsOptional()
-  @IsEnum(MovieGenriesEnum)
-  Genre!: MovieGenriesEnum;
+  @IsEnum(SeriesGenriesEnum)
+  Genre!: SeriesGenriesEnum;
 
   @Field(() => String, { nullable: true })
   @IsOptional()
-  @IsEnum(MovieStatusEnum)
-  Status!: MovieStatusEnum;
+  @IsEnum(SeriesStatusEnum)
+  Status!: SeriesStatusEnum;
 }
 
 @InputType()
 export class UpdateAdditionalInfoInput extends CreateAdditionalInfoInput {}
 
 @InputType()
-export class GetAdditionalInfoByMovieIdParams {
+export class GetAdditionalInfoBySeriesIdParams {
   @Field(() => String)
   @IsNotEmpty()
   @IsUUID()
-  MovieId!: string;
+  SeriesId!: string;
 }

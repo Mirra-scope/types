@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-namespace */
+
 import { InputType, Field } from "@nestjs/graphql";
 import { IsNotEmpty, IsUUID } from "class-validator";
 
