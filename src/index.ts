@@ -94,3 +94,25 @@ export { CreateVideoResourceInput as SeriesCreateVideoResourceInput } from "./se
 export { RetrieveS3ObjectKeyAndUrlOutput as SeriesRetrieveS3ObjectKeyAndUrlOutput } from "./series";
 export { ImageMimeType as SeriesImageMimeType } from "./series";
 export { VideoMineType as SeriesVideoMineType } from "./series";
+
+export { CloudinaryUploadInput as TrailerCloudinaryUploadInput } from "./trailer";
+export { ImageUrlOutput as TrailerImageUrlOutput } from "./trailer";
+export { Image as TrailerImage } from "./trailer";
+export { ImageVariantEnum as TrailerImageVariantEnum } from "./trailer";
+export { ChangeThumbnailImageInput as TrailerChangeThumbnailImageInput } from "./trailer";
+export { CreateImageInput as TrailerCreateImageInput } from "./trailer";
+export { GetImageBySeriesIdParams as TrailerGetImageBySeriesIdParams } from "./trailer";
+export { UpdateImageInput as TrailerUpdateImageInput } from "./trailer";
+export { ImageIdOutput as TrailerImageIdOutput } from "./trailer";
+export { Video as TrailerVideo } from "./trailer";
+export { GetUploadVideoSignedUrlInput as TrailerGetUploadVideoSignedUrlInput } from "./trailer";
+export { UploadVideoSignedUrlOutput as TrailerUploadVideoSignedUrlOutput } from "./trailer";
+export { VideoResource as TrailerVideoResource } from "./trailer";
+export { CreateVideoResourceInput as TrailerCreateVideoResourceInput } from "./trailer";
+export { RetrieveS3ObjectKeyAndUrlOutput as TrailerRetrieveS3ObjectKeyAndUrlOutput } from "./trailer";
+export { ImageMimeType as TrailerImageMimeType } from "./trailer";
+export { VideoMineType as TrailerVideoMineType } from "./trailer";
+export { Trailer as TrailerTrailer } from "./trailer";
+export { CreateTrailerInput as TrailerCreateTrailerInput } from "./trailer";
+export { ChangeTrailerMediaInput as TrailerChangeTrailerMediaInput } from "./trailer";
+export { TrailerMediaEnum as TrailerTrailerMediaEnum } from "./trailer";

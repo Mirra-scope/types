@@ -1,18 +1,18 @@
-
 import { Field, InputType } from "@nestjs/graphql";
-import { IsNotEmpty, IsNumber, IsObject, IsString, IsUUID } from "class-validator";
+import { IsNotEmpty, IsUUID, IsOptional, IsEnum, IsString } from "class-validator";
+import { TrailerMediaEnum } from "./Trailer.enum";
 
 @InputType()
-export class CreateSeasonInput {
-  @Field(() => Number)
+export class CreateTrailerInput {
+  @Field(() => String)
   @IsNotEmpty()
-  @IsNumber()
-  Number!: number;
+  @IsUUID()
+  VideoId!: string;
 
   @Field(() => String)
   @IsNotEmpty()
   @IsUUID()
-  SeriesId!: string;
+  SignedUrlKeyId!: string;
 
   @Field(() => String)
   @IsNotEmpty()
@@ -24,7 +24,6 @@ export class CreateSeasonInput {
   @IsString()
   Title!: string;
 
-  // have default value
   @Field(() => String)
   @IsNotEmpty()
   @IsString()
@@ -34,33 +33,32 @@ export class CreateSeasonInput {
   @IsNotEmpty()
   @IsString()
   ReleaseDate!: number;
+
+  @Field(() => String)
+  @IsOptional()
+  @IsEnum(TrailerMediaEnum)
+  MediaType!: TrailerMediaEnum;
+
+  @Field(() => String)
+  @IsOptional()
+  @IsUUID()
+  MediaId!: string;
 }
 
 @InputType()
-export class ChangeSeasonSeriesInput {
+export class ChangeTrailerMediaInput {
   @Field(() => String)
   @IsNotEmpty()
   @IsUUID()
-  SeasonId!: string;
+  TrailerId!: string;
+
+  @Field(() => String)
+  @IsNotEmpty()
+  @IsEnum(TrailerMediaEnum)
+  MediaType!: TrailerMediaEnum;
 
   @Field(() => String)
   @IsNotEmpty()
   @IsUUID()
-  SeriesId!: string;
-}
-
-@InputType()
-export class GetSeasonBySeriesIdParams {
-  @Field(() => String)
-  @IsNotEmpty()
-  @IsUUID()
-  SeriesId!: string;
-}
-
-@InputType()
-export class GetNextSeasonNumberParams {
-  @Field(() => String)
-  @IsNotEmpty()
-  @IsUUID()
-  SeriesId!: string;
+  MediaId!: string;
 }
