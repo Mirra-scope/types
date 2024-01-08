@@ -1,6 +1,6 @@
 import { ObjectType, Field } from "@nestjs/graphql";
 import { EntityBase } from "..";
-import { VideoQualityEnum } from "../common/enum";
+import { VideoQualityEnum } from "./Video.enum";
 
 @ObjectType()
 export class Video extends EntityBase {

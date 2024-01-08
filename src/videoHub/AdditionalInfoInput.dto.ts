@@ -1,7 +1,6 @@
 import { IsEnum, IsNotEmpty, IsOptional, IsUUID } from "class-validator";
 import { Field, InputType } from "@nestjs/graphql";
-import { MovieGenriesEnum, MovieStatusEnum } from "./AddtionalInfo.enum";
-import { MediaCountriesEnum, MediaLanguagiesEnum } from "../common/enum";
+import { MediaCountriesEnum, MediaLanguagiesEnum, MovieGenriesEnum, MovieStatusEnum } from "./AddtionalInfo.enum";
 
 @InputType()
 export class CreateAdditionalInfoInput {

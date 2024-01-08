@@ -1,7 +1,6 @@
 
 import { Field, ObjectType } from "@nestjs/graphql";
-import { MediaCountriesEnum, MediaLanguagiesEnum } from "..";
-import { SeriesGenriesEnum, SeriesStatusEnum } from "./AddtionalInfo.enum";
+import { MediaCountriesEnum, MediaLanguagiesEnum, MovieGenriesEnum, MovieStatusEnum } from "..";
 
 @ObjectType()
 export class GetManagerSeriesForTableOutput {
@@ -24,10 +23,10 @@ export class GetManagerTableOutputSeriesList {
   originalLanguage!: MediaLanguagiesEnum;
 
   @Field(() => String)
-  genre!: SeriesGenriesEnum;
+  genre!: MovieGenriesEnum;
 
   @Field(() => String)
-  status!: SeriesStatusEnum;
+  status!: MovieStatusEnum;
 
   @Field(() => String)
   title!: string;
