@@ -1,6 +1,6 @@
 import { ObjectType, Field } from "@nestjs/graphql";
 import { EntityBase, MediaCountriesEnum, MediaLanguagiesEnum } from "..";
-import { MovieGenriesEnum, MovieStatusEnum } from "./AddtionalInfo.enum";
+import { MediaGenriesEnum, MediaStatusEnum } from "./AddtionalInfo.enum";
 
 @ObjectType()
 export class AdditionalInfo extends EntityBase {
@@ -11,8 +11,8 @@ export class AdditionalInfo extends EntityBase {
   originalLanguage!: MediaLanguagiesEnum;
   
   @Field(() => String)
-  genre!: MovieGenriesEnum;
+  genre!: MediaGenriesEnum;
   
   @Field(() => String)
-  status!: MovieStatusEnum;
+  status!: MediaStatusEnum;
 }

@@ -1,4 +1,4 @@
-export enum MovieStatusEnum {
+export enum MediaStatusEnum {
   IN_PRODUCTION = "In Production",
   RELEASED = "Released",
   POST_PRODUCTION = "Post Production",
@@ -6,7 +6,7 @@ export enum MovieStatusEnum {
   CANCELED = "Canceled",
 }
 
-export enum MovieGenriesEnum {
+export enum MediaGenriesEnum {
   ACTION = "Action",
   DRAMA = "Drama",
   COMEDY = "Comedy",

@@ -1,5 +1,3 @@
-
-
 import { Field, InputType } from "@nestjs/graphql";
 import { IsNotEmpty, IsObject, IsString, IsUUID } from "class-validator";
 import { CreateAdditionalInfoInput } from "./AdditionalInfoInput.dto";
@@ -11,13 +9,13 @@ export class CreateMovieInput {
   @IsNotEmpty()
   @IsString()
   Title!: string;
-  
+
   // have default value
   @Field(() => String)
   @IsNotEmpty()
   @IsString()
   PlotSummary!: string;
-  
+
   @Field(() => Number)
   @IsNotEmpty()
   @IsString()
@@ -42,9 +40,4 @@ export class CreateMovieInput {
   @IsObject()
   @IsNotEmpty()
   AdditionalInfo!: CreateAdditionalInfoInput;
-
-  @Field(() => CreateFinancialInfoInput)
-  @IsObject()
-  @IsNotEmpty()
-  MovieFinanacialInfo!: CreateFinancialInfoInput;
 }

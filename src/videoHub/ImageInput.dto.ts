@@ -49,9 +49,9 @@ export class ChangeThumbnailImageInput {
 }
 
 @InputType()
-export class GetImageByMovieIdParams {
+export class GetImageByMediaIdParams {
   @Field(() => String)
   @IsNotEmpty()
   @IsUUID()
-  MovieId!: string;
+  MediaId!: string;
 }

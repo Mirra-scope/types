@@ -1,6 +1,6 @@
 export enum ActivityActionEnum {
   UPLOADED = "uploaded",
-  MOVIE_UPLOADING = "movie-uploading",
+  MOVIE_UPLOADING = "media-uploading",
 }
 
 export enum ActivityStatusEnum {

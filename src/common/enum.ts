@@ -1,4 +1,4 @@
-export enum MovierMediaEnum {
+export enum MirraScopeMediaEnum {
   SERIES = "Series",
   SEASON = "Season",
   EPISODE = "Episode",
