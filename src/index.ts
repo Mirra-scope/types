@@ -2,7 +2,7 @@ export { EntityBase } from "./common/EntityBase";
 export { SuccessOutput } from "./common/CommonOutput.dto";
 export { CurrentUserType } from "./common/types";
 export { DimentionType } from "./common/types";
-
+export { MovierMediaEnum } from "./common/enum";
 
 export { User } from "./authentication";
 export { UserRegisterInput } from "./authentication";
