@@ -74,3 +74,4 @@ export { GetNextEpisodeNumberOutput } from "./videoHub";
 export { MediaCountriesEnum } from "./videoHub";
 export { MediaLanguagiesEnum } from "./videoHub";
 export { VideoQualityEnum } from "./videoHub";
+export { GetManagerSeriesWithImageOutput } from "./videoHub";

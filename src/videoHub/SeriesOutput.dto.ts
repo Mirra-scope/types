@@ -1,6 +1,6 @@
-
 import { Field, ObjectType } from "@nestjs/graphql";
-import { MediaCountriesEnum, MediaLanguagiesEnum, MediaGenriesEnum, MediaStatusEnum } from "..";
+import { MediaCountriesEnum, MediaLanguagiesEnum, MediaGenriesEnum, MediaStatusEnum, Series } from "..";
+import { Image } from "./Image.entity";
 
 @ObjectType()
 export class GetManagerSeriesForTableOutput {
@@ -45,4 +45,10 @@ export class GetManagerTableOutputSeriesList {
 
   @Field(() => Number, { nullable: true })
   updatedAt!: number;
+}
+
+@ObjectType()
+export class GetManagerSeriesWithImageOutput extends Series {
+  @Field(() => String)
+  imageUrl!: string;
 }

@@ -58,3 +58,4 @@ export { CreateEpisodeInput } from "./EpisodeInput.dto";
 export { GetNextEpisodeNumberParams } from "./EpisodeInput.dto";
 export { EpisodeIdOutput } from "./EpisodeOutput.dto";
 export { GetNextEpisodeNumberOutput } from "./EpisodeOutput.dto";
+export { GetManagerSeriesWithImageOutput } from "./SeriesOutput.dto";
