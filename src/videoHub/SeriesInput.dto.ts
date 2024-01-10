@@ -24,7 +24,7 @@ export class CreateSeriesInput {
 
   @Field(() => Number)
   @IsNotEmpty()
-  @IsString()
+  @IsNumber()
   ReleaseDate!: number;
 
   @Field(() => CreateAdditionalInfoInput)
@@ -78,7 +78,7 @@ export class UpdateSeriesInput {
 
   @Field(() => Number)
   @IsOptional()
-  @IsString()
+  @IsNumber()
   ReleaseDate!: number;
 
   @Field(() => UpdateAdditionalInfoInput)

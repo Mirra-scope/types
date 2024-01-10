@@ -29,7 +29,6 @@ export class GetUploadVideoSignedUrlInput {
   @IsNotEmpty()
   @IsNumber()
   @Max(6291456)
-  @Min(500)
   SizeInKb!: number;
 
   // Extension

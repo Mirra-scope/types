@@ -32,7 +32,7 @@ export class CreateSeasonInput {
 
   @Field(() => Number)
   @IsNotEmpty()
-  @IsString()
+  @IsNumber()
   ReleaseDate!: number;
 }
 

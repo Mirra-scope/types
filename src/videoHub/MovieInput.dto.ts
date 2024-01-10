@@ -1,5 +1,5 @@
 import { Field, InputType } from "@nestjs/graphql";
-import { IsNotEmpty, IsObject, IsString, IsUUID } from "class-validator";
+import { IsNotEmpty, IsNumber, IsObject, IsString, IsUUID } from "class-validator";
 import { CreateAdditionalInfoInput } from "./AdditionalInfoInput.dto";
 import { CreateFinancialInfoInput } from "./FinancialInfoInput.dto";
 
@@ -18,7 +18,7 @@ export class CreateMovieInput {
 
   @Field(() => Number)
   @IsNotEmpty()
-  @IsString()
+  @IsNumber()
   ReleaseDate!: number;
 
   @Field(() => String)

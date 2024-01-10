@@ -1,5 +1,5 @@
 import { Field, InputType } from "@nestjs/graphql";
-import { IsNotEmpty, IsUUID, IsOptional, IsEnum, IsString } from "class-validator";
+import { IsNotEmpty, IsUUID, IsOptional, IsEnum, IsString, IsNumber } from "class-validator";
 import { TrailerMediaEnum } from "./Trailer.enum";
 
 @InputType()
@@ -31,7 +31,7 @@ export class CreateTrailerInput {
 
   @Field(() => Number)
   @IsNotEmpty()
-  @IsString()
+  @IsNumber()
   ReleaseDate!: number;
 
   @Field(() => String)

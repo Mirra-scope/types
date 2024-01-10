@@ -42,7 +42,7 @@ export class CreateEpisodeInput {
 
   @Field(() => Number)
   @IsNotEmpty()
-  @IsString()
+  @IsNumber()
   ReleaseDate!: number;
 }
 
