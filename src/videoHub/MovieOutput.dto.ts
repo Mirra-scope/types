@@ -1,18 +1,18 @@
 import { Field, ObjectType } from "@nestjs/graphql";
-import { MediaCountriesEnum, MediaLanguagiesEnum, MediaGenriesEnum, MediaStatusEnum, Series } from "..";
+import { MediaCountriesEnum, MediaLanguagiesEnum, MediaGenriesEnum, MediaStatusEnum, Movie } from "..";
 import { Image } from "./Image.entity";
 
 @ObjectType()
-export class GetManagerSeriesForTableOutput {
-  @Field(() => [GetManagerTableOutputSeriesList])
-  seriesList!: GetManagerTableOutputSeriesList[];
+export class GetManagerMovieForTableOutput {
+  @Field(() => [GetManagerTableMovieListOutput])
+  movieList!: GetManagerTableMovieListOutput[];
 
   @Field(() => Number)
   totalRecords!: number;
 }
 
 @ObjectType()
-export class GetManagerTableOutputSeriesList {
+export class GetManagerTableMovieListOutput {
   @Field(() => String)
   ID!: string;
 
@@ -45,7 +45,7 @@ export class GetManagerTableOutputSeriesList {
 }
 
 @ObjectType()
-export class GetManagerSeriesWithImageOutput extends Series {
+export class MovieIdOutput {
   @Field(() => String)
-  imageUrl!: string;
+  ID!: string;
 }

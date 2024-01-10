@@ -34,7 +34,6 @@ export { TrailerMediaEnum } from "./Trailer.enum";
 export { ChangeTrailerMediaInput } from "./TrailerInput.dto";
 export { CreateTrailerInput } from "./TrailerInput.dto";
 
-
 export { Season } from "./Season.entity";
 export { ChangeSeasonSeriesInput } from "./SeasonInput.dto";
 export { CreateSeasonInput } from "./SeasonInput.dto";
@@ -59,3 +58,6 @@ export { GetNextEpisodeNumberParams } from "./EpisodeInput.dto";
 export { EpisodeIdOutput } from "./EpisodeOutput.dto";
 export { GetNextEpisodeNumberOutput } from "./EpisodeOutput.dto";
 export { GetManagerSeriesWithImageOutput } from "./SeriesOutput.dto";
+export { GetManagerMovieForTableOutput } from "./MovieOutput.dto";
+export { GetManagerTableMovieListOutput } from "./MovieOutput.dto";
+export { MovieIdOutput } from "./MovieOutput.dto";

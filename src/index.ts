@@ -75,3 +75,6 @@ export { MediaCountriesEnum } from "./videoHub";
 export { MediaLanguagiesEnum } from "./videoHub";
 export { VideoQualityEnum } from "./videoHub";
 export { GetManagerSeriesWithImageOutput } from "./videoHub";
+export { GetManagerMovieForTableOutput } from "./videoHub";
+export { GetManagerTableMovieListOutput } from "./videoHub";
+export { MovieIdOutput } from "./videoHub";
