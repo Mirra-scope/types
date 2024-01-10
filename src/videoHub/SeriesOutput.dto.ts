@@ -45,7 +45,40 @@ export class GetManagerTableOutputSeriesList {
 }
 
 @ObjectType()
-export class GetManagerSeriesWithImageOutput extends Series {
+export class GetManagerSeriesWithImageOutput implements Series {
   @Field(() => String)
   imageUrl!: string;
+
+  @Field(() => String)
+  ID!: string;
+
+  @Field(() => Number)
+  createdAt!: number;
+
+  @Field(() => Number)
+  updatedAt!: number;
+
+  @Field(() => Number)
+  deletedAt!: number;
+
+  @Field(() => String)
+  title!: string;
+
+  // have default value
+  @Field(() => String)
+  plotSummary!: string;
+
+  @Field(() => Number)
+  releaseDate!: number;
+
+  // have default value
+  @Field(() => Number)
+  priceInDollar!: number;
+
+  // have default value
+  @Field(() => Boolean)
+  isFree!: boolean;
+
+  @Field(() => String)
+  userId!: string;
 }
