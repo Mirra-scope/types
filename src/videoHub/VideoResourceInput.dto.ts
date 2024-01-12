@@ -17,3 +17,11 @@ export class GetVideoResourceByMediaIdInput {
   @IsUUID()
   MediaId!: string;
 }
+
+@InputType()
+export class GetVideoResourceByIdInput {
+  @Field(() => String)
+  @IsNotEmpty()
+  @IsUUID()
+  ID!: string;
+}
