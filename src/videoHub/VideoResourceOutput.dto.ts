@@ -4,8 +4,8 @@ import { Field, ObjectType } from "@nestjs/graphql";
 @ObjectType()
 export class RetrieveS3ObjectKeyAndUrlOutput {
   @Field(() => String)
-  ObjectUrl!: string;
+  url!: string;
 
   @Field(() => String)
-  ObjectKey!: string;
+  key!: string;
 }

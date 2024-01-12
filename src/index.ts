@@ -78,3 +78,4 @@ export { GetManagerSeriesWithImageOutput } from "./videoHub";
 export { GetManagerMovieForTableOutput } from "./videoHub";
 export { GetManagerTableMovieListOutput } from "./videoHub";
 export { MovieIdOutput } from "./videoHub";
+export { GetVideoResourceByMediaIdInput } from "./videoHub";

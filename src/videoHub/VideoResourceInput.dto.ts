@@ -9,3 +9,11 @@ export class CreateVideoResourceInput {
   @IsUUID()
   SignedUrlKeyId!: string;
 }
+
+@InputType()
+export class GetVideoResourceByMediaIdInput {
+  @Field(() => String)
+  @IsNotEmpty()
+  @IsUUID()
+  MediaId!: string;
+}

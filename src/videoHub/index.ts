@@ -24,6 +24,7 @@ export { VideoQualityEnum } from "./Video.enum";
 
 export { VideoResource } from "./VideoResource.entity";
 export { CreateVideoResourceInput } from "./VideoResourceInput.dto";
+export { GetVideoResourceByMediaIdInput } from "./VideoResourceInput.dto";
 export { RetrieveS3ObjectKeyAndUrlOutput } from "./VideoResourceOutput.dto";
 export { Video } from "./Video.entity";
 export { GetUploadVideoSignedUrlInput } from "./VideoInput.dto";
