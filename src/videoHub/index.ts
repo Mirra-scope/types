@@ -47,7 +47,7 @@ export { GetNextSeasonNumberOutput } from "./SeasonOutput.dto";
 export { Series } from "./Series.entity";
 export { GetManagerSeriesForTableOutput } from "./SeriesOutput.dto";
 export { GetManagerTableOutputSeriesList } from "./SeriesOutput.dto";
-export { GetSeriesByIdWithAdditionalInfoOutput } from "./SeriesOutput.dto";
+export { GetSeriesDetailsByIdOutput } from "./SeriesOutput.dto";
 export { CreateSeriesInput } from "./SeriesInput.dto";
 export { DeleteMultipleSeriesByIdzParams } from "./SeriesInput.dto";
 export { DeleteSeriesByIdParams } from "./SeriesInput.dto";

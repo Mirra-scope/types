@@ -45,7 +45,7 @@ export class GetManagerTableOutputSeriesList {
 }
 
 @ObjectType()
-export class GetManagerSeriesWithImageOutput implements Series {
+export class GetManagerSeriesWithImageOutput {
   @Field(() => String)
   imageUrl!: string;
 
@@ -84,40 +84,46 @@ export class GetManagerSeriesWithImageOutput implements Series {
 }
 
 @ObjectType()
-export class GetSeriesByIdWithAdditionalInfoOutput implements Series {
+export class GetSeriesDetailsByIdOutput {
   @Field(() => String)
   ID!: string;
 
-  @Field(() => Number)
-  createdAt!: number;
+  @Field(() => String)
+  originCountry!: MediaCountriesEnum;
 
-  @Field(() => Number)
-  updatedAt!: number;
+  @Field(() => String)
+  originalLanguage!: MediaLanguagiesEnum;
 
-  @Field(() => Number)
-  deletedAt!: number;
+  @Field(() => String)
+  genre!: MediaGenriesEnum;
+
+  @Field(() => String)
+  status!: MediaStatusEnum;
 
   @Field(() => String)
   title!: string;
 
-  // have default value
   @Field(() => String)
   plotSummary!: string;
 
   @Field(() => Number)
   releaseDate!: number;
 
-  // have default value
-  @Field(() => Number)
-  priceInDollar!: number;
+  @Field(() => String)
+  imageUrl!: string;
 
-  // have default value
+  @Field(() => Number)
+  uploadDate!: number;
+
+  @Field(() => Number)
+  netProfit!: number;
+
+  @Field(() => Number)
+  budget!: number;
+
+  @Field(() => Number)
+  revenue!: number;
+
   @Field(() => Boolean)
   isFree!: boolean;
-
-  @Field(() => String)
-  userId!: string;
-  
-  @Field(() => AdditionalInfo)
-  additionalInfo!: AdditionalInfo
 }

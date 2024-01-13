@@ -81,4 +81,4 @@ export { MovieIdOutput } from "./videoHub";
 export { GetVideoResourceByMediaIdInput } from "./videoHub";
 export { GetVideoResourceByIdInput } from "./videoHub";
 export { CreateImageByUrlInput } from "./videoHub";
-export { GetSeriesByIdWithAdditionalInfoOutput } from "./videoHub";
+export { GetSeriesDetailsByIdOutput } from "./videoHub";
