@@ -10,6 +10,7 @@ export { CreateFinancialInfoInput } from "./FinancialInfoInput.dto";
 export { ImageVariantEnum } from "./Image.enum";
 export { Image } from "./Image.entity";
 export { ChangeThumbnailImageInput } from "./ImageInput.dto";
+export { CreateImageByUrlInput } from "./ImageInput.dto";
 export { CreateImageInput } from "./ImageInput.dto";
 export { GetImageByMediaIdParams } from "./ImageInput.dto";
 export { UpdateImageInput } from "./ImageInput.dto";

@@ -1,4 +1,3 @@
-
 import { Field, InputType, OmitType } from "@nestjs/graphql";
 import { IsEnum, IsMimeType, IsNotEmpty, IsOptional, IsString, IsUUID } from "class-validator";
 import { ImageMimeType } from "./types";
@@ -54,4 +53,17 @@ export class GetImageByMediaIdParams {
   @IsNotEmpty()
   @IsUUID()
   MediaId!: string;
+}
+
+@InputType()
+export class CreateImageByUrlInput {
+  @Field(() => String)
+  @IsNotEmpty()
+  @IsString()
+  Url!: string;
+
+  @Field(() => String, { nullable: true })
+  @IsOptional()
+  @IsEnum(ImageVariantEnum)
+  Variant!: ImageVariantEnum;
 }
