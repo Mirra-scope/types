@@ -93,7 +93,7 @@ export class UpdateSeriesInput {
 }
 
 @InputType()
-export class UpdateSeriesParams {
+export class SeriesIdParams {
   @Field(() => String)
   @IsNotEmpty()
   @IsUUID()
