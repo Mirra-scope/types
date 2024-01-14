@@ -1,8 +1,8 @@
-
 import { Field, InputType } from "@nestjs/graphql";
 import { IsArray, IsNotEmpty, IsNumber, IsObject, IsOptional, IsString, IsUUID } from "class-validator";
 import { CreateAdditionalInfoInput, UpdateAdditionalInfoInput } from "./AdditionalInfoInput.dto";
 import { UpdateImageInput } from "./ImageInput.dto";
+import { UpdateFinancialInfoInput } from ".";
 
 @InputType()
 export class CreateSeriesInput {
@@ -65,18 +65,18 @@ export class DeleteMultipleSeriesByIdzParams {
 
 @InputType()
 export class UpdateSeriesInput {
-  @Field(() => String)
+  @Field(() => String, { nullable: true })
   @IsOptional()
   @IsString()
   Title!: string;
 
   // have default value
-  @Field(() => String)
+  @Field(() => String, { nullable: true })
   @IsOptional()
   @IsString()
   PlotSummary!: string;
 
-  @Field(() => Number)
+  @Field(() => Number, { nullable: true })
   @IsOptional()
   @IsNumber()
   ReleaseDate!: number;
@@ -90,6 +90,11 @@ export class UpdateSeriesInput {
   @IsObject()
   @IsOptional()
   Image!: UpdateImageInput;
+
+  @Field(() => UpdateFinancialInfoInput)
+  @IsObject()
+  @IsOptional()
+  financialInfo!: UpdateFinancialInfoInput;
 }
 
 @InputType()

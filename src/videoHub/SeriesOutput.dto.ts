@@ -115,13 +115,13 @@ export class GetSeriesDetailsByIdOutput {
   @Field(() => Number)
   uploadDate!: number;
 
-  @Field(() => Number)
+  @Field(() => Number, { nullable: true })
   netProfit!: number;
 
-  @Field(() => Number)
+  @Field(() => Number, { nullable: true })
   budget!: number;
 
-  @Field(() => Number)
+  @Field(() => Number, { nullable: true })
   revenue!: number;
 
   @Field(() => Boolean)
