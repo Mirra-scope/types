@@ -94,7 +94,7 @@ export class UpdateSeriesInput {
   @Field(() => UpdateFinancialInfoInput)
   @IsObject()
   @IsOptional()
-  financialInfo!: UpdateFinancialInfoInput;
+  FinancialInfo!: UpdateFinancialInfoInput;
 }
 
 @InputType()
