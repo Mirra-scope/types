@@ -81,17 +81,17 @@ export class UpdateSeriesInput {
   @IsNumber()
   ReleaseDate!: number;
 
-  @Field(() => UpdateAdditionalInfoInput)
+  @Field(() => UpdateAdditionalInfoInput, { nullable: true })
   @IsObject()
   @IsOptional()
   AdditionalInfo!: UpdateAdditionalInfoInput;
 
-  @Field(() => UpdateImageInput)
+  @Field(() => UpdateImageInput, { nullable: true })
   @IsObject()
   @IsOptional()
   Image!: UpdateImageInput;
 
-  @Field(() => UpdateFinancialInfoInput)
+  @Field(() => UpdateFinancialInfoInput, { nullable: true })
   @IsObject()
   @IsOptional()
   FinancialInfo!: UpdateFinancialInfoInput;
