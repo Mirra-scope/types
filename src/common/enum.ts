@@ -1,4 +1,4 @@
-export enum MirraScopeMediaEnum {
+export enum ZgayaHubMediaEnum {
   SERIES = "Series",
   SEASON = "Season",
   EPISODE = "Episode",

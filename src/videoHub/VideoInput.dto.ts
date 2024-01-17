@@ -2,7 +2,7 @@
 import { InputType, Field } from "@nestjs/graphql";
 import { IsEnum, IsMimeType, IsNotEmpty, IsNumber, IsOptional, Max, Min } from "class-validator";
 import { VideoMineType } from "./types";
-import { MirraScopeMediaEnum } from "../common/enum";
+import { ZgayaHubMediaEnum } from "../common/enum";
 
 @InputType()
 export class GetUploadVideoSignedUrlInput {
@@ -39,6 +39,6 @@ export class GetUploadVideoSignedUrlInput {
 
   @Field(() => String)
   @IsNotEmpty()
-  @IsEnum(MirraScopeMediaEnum)
-  MediaType!: MirraScopeMediaEnum;
+  @IsEnum(ZgayaHubMediaEnum)
+  MediaType!: ZgayaHubMediaEnum;
 }
