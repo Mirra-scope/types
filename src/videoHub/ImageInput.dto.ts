@@ -35,7 +35,7 @@ export class UpdateImageInput {
 }
 
 @InputType()
-export class ChangeThumbnailImageInput {
+export class ChangeImageInput {
   @Field(() => String)
   @IsNotEmpty()
   @IsString()

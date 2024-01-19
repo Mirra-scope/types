@@ -31,7 +31,7 @@ export { CloudinaryUploadInput } from "./videoHub";
 export { ImageUrlOutput } from "./videoHub";
 export { CreateFinancialInfoInput } from "./videoHub";
 export { ImageVariantEnum } from "./videoHub";
-export { ChangeThumbnailImageInput } from "./videoHub";
+export { ChangeImageInput } from "./videoHub";
 export { CreateImageInput } from "./videoHub";
 export { ImageMediaIdParams } from "./videoHub";
 export { UpdateImageInput } from "./videoHub";
