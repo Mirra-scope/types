@@ -33,7 +33,7 @@ export { CreateFinancialInfoInput } from "./videoHub";
 export { ImageVariantEnum } from "./videoHub";
 export { ChangeThumbnailImageInput } from "./videoHub";
 export { CreateImageInput } from "./videoHub";
-export { GetImageByMediaIdParams } from "./videoHub";
+export { ImageMediaIdParams } from "./videoHub";
 export { UpdateImageInput } from "./videoHub";
 export { ImageIdOutput } from "./videoHub";
 export { Movie } from "./videoHub";

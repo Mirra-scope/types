@@ -48,7 +48,7 @@ export class ChangeThumbnailImageInput {
 }
 
 @InputType()
-export class GetImageByMediaIdParams {
+export class ImageMediaIdParams {
   @Field(() => String)
   @IsNotEmpty()
   @IsUUID()

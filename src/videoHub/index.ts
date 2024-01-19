@@ -13,7 +13,7 @@ export { Image } from "./Image.entity";
 export { ChangeThumbnailImageInput } from "./ImageInput.dto";
 export { CreateImageByUrlInput } from "./ImageInput.dto";
 export { CreateImageInput } from "./ImageInput.dto";
-export { GetImageByMediaIdParams } from "./ImageInput.dto";
+export { ImageMediaIdParams } from "./ImageInput.dto";
 export { UpdateImageInput } from "./ImageInput.dto";
 export { ImageIdOutput } from "./ImageOutput.dto";
 export { Movie } from "./Movie.entity";
