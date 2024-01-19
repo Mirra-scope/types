@@ -83,3 +83,8 @@ export { GetVideoResourceByIdInput } from "./videoHub";
 export { CreateImageByUrlInput } from "./videoHub";
 export { GetSeriesDetailsByIdOutput } from "./videoHub";
 export { UpdateFinancialInfoInput } from "./videoHub";
+export { GetManagerMovieForTableInput } from "./videoHub";
+export { DeleteMovieByIdParams } from "./videoHub";
+export { DeleteMultipleMovieByIdzParams } from "./videoHub";
+export { MovieIdParams } from "./videoHub";
+export { UpdateMovieInput } from "./videoHub";

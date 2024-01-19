@@ -52,35 +52,12 @@ export class GetManagerSeriesWithImageOutput {
   @Field(() => String)
   ID!: string;
 
-  @Field(() => Number)
-  createdAt!: number;
-
-  @Field(() => Number)
-  updatedAt!: number;
-
-  @Field(() => Number)
-  deletedAt!: number;
-
   @Field(() => String)
   title!: string;
 
   // have default value
   @Field(() => String)
   plotSummary!: string;
-
-  @Field(() => Number)
-  releaseDate!: number;
-
-  // have default value
-  @Field(() => Number)
-  priceInDollar!: number;
-
-  // have default value
-  @Field(() => Boolean)
-  isFree!: boolean;
-
-  @Field(() => String)
-  userId!: string;
 }
 
 @ObjectType()
@@ -115,13 +92,13 @@ export class GetSeriesDetailsByIdOutput {
   @Field(() => Number)
   uploadDate!: number;
 
-  @Field(() => Number, { nullable: true })
+  @Field(() => Number)
   netProfit!: number;
 
-  @Field(() => Number, { nullable: true })
+  @Field(() => Number)
   budget!: number;
 
-  @Field(() => Number, { nullable: true })
+  @Field(() => Number)
   revenue!: number;
 
   @Field(() => Boolean)

@@ -66,3 +66,8 @@ export { GetManagerSeriesWithImageOutput } from "./SeriesOutput.dto";
 export { GetManagerMovieForTableOutput } from "./MovieOutput.dto";
 export { GetManagerTableMovieListOutput } from "./MovieOutput.dto";
 export { MovieIdOutput } from "./MovieOutput.dto";
+export { GetManagerMovieForTableInput } from "./MovieInput.dto";
+export { DeleteMovieByIdParams } from "./MovieInput.dto";
+export { DeleteMultipleMovieByIdzParams } from "./MovieInput.dto";
+export { MovieIdParams } from "./MovieInput.dto";
+export { UpdateMovieInput } from "./MovieInput.dto";

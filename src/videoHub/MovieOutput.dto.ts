@@ -1,6 +1,5 @@
 import { Field, ObjectType } from "@nestjs/graphql";
 import { MediaCountriesEnum, MediaLanguagiesEnum, MediaGenriesEnum, MediaStatusEnum, Movie } from "..";
-import { Image } from "./Image.entity";
 
 @ObjectType()
 export class GetManagerMovieForTableOutput {
@@ -17,15 +16,6 @@ export class GetManagerTableMovieListOutput {
   ID!: string;
 
   @Field(() => String)
-  originCountry!: MediaCountriesEnum;
-
-  @Field(() => String)
-  originalLanguage!: MediaLanguagiesEnum;
-
-  @Field(() => String)
-  genre!: MediaGenriesEnum;
-
-  @Field(() => String)
   status!: MediaStatusEnum;
 
   @Field(() => String)
@@ -39,6 +29,12 @@ export class GetManagerTableMovieListOutput {
 
   @Field(() => String)
   imageUrl!: string;
+
+  @Field(() => Number)
+  likeCount!: number;
+
+  @Field(() => Number)
+  ratings!: number;
 
   @Field(() => Number)
   uploadDate!: number;
