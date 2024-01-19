@@ -34,7 +34,7 @@ export class GetManagerTableMovieListOutput {
   likeCount!: number;
 
   @Field(() => Number)
-  ratings!: number;
+  avarageRating!: number;
 
   @Field(() => Number)
   uploadDate!: number;
