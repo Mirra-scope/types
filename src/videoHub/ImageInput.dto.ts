@@ -15,8 +15,8 @@ export class CreateImageInput {
   @IsMimeType()
   Mime!: ImageMimeType;
 
-  @Field(() => String)
-  @IsNotEmpty()
+  @Field(() => String, { nullable: true })
+  @IsOptional()
   @IsEnum(ImageVariantEnum)
   Variant!: ImageVariantEnum;
 }
