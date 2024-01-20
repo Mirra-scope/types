@@ -88,3 +88,4 @@ export { MovieIdParams } from "./videoHub";
 export { GetSeriesDataForUpdateFormOutput } from "./videoHub";
 export { UpdateMovieInput } from "./videoHub";
 export { GetMovieDataForUpdateFormOutput } from "./videoHub";
+export { ChangeMovieInput } from "./videoHub";

@@ -43,6 +43,19 @@ export class CreateMovieInput {
 }
 
 @InputType()
+export class ChangeMovieInput {
+  @Field(() => String)
+  @IsNotEmpty()
+  @IsUUID()
+  VideoId!: string;
+
+  @Field(() => String)
+  @IsNotEmpty()
+  @IsUUID()
+  SignedUrlKeyId!: string;
+}
+
+@InputType()
 export class GetManagerMovieForTableInput {
   @Field(() => Number)
   @IsNotEmpty()
