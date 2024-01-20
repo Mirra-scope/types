@@ -87,4 +87,6 @@ export { GetManagerMovieForTableInput } from "./videoHub";
 export { DeleteMovieByIdParams } from "./videoHub";
 export { DeleteMultipleMovieByIdzParams } from "./videoHub";
 export { MovieIdParams } from "./videoHub";
+export { GetSeriesDataForUpdateFormOutput } from "./videoHub";
 export { UpdateMovieInput } from "./videoHub";
+export { GetMovieDataForUpdateFormOutput } from "./videoHub";

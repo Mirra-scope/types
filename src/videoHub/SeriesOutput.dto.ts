@@ -38,7 +38,7 @@ export class GetManagerTableOutputSeriesList {
   releaseDate!: number;
 
   @Field(() => String)
-  imageUrl!: string;
+  backdropImageUrl!: string;
 
   @Field(() => Number)
   uploadDate!: number;
@@ -47,7 +47,7 @@ export class GetManagerTableOutputSeriesList {
 @ObjectType()
 export class GetManagerSeriesWithImageOutput {
   @Field(() => String)
-  imageUrl!: string;
+  backdropImageUrl!: string;
 
   @Field(() => String)
   ID!: string;
@@ -87,7 +87,7 @@ export class GetSeriesDetailsByIdOutput {
   releaseDate!: number;
 
   @Field(() => String)
-  imageUrl!: string;
+  backdropImageUrl!: string;
 
   @Field(() => Number)
   uploadDate!: number;
@@ -103,4 +103,40 @@ export class GetSeriesDetailsByIdOutput {
 
   @Field(() => Boolean)
   isFree!: boolean;
+}
+
+@ObjectType()
+export class GetSeriesDataForUpdateFormOutput {
+  @Field(() => String)
+  title!: string;
+
+  @Field(() => String)
+  plotSummary!: string;
+
+  @Field(() => Number)
+  releaseDate!: number;
+
+  @Field(() => String)
+  originCountry!: MediaCountriesEnum;
+
+  @Field(() => String)
+  originalLanguage!: MediaLanguagiesEnum;
+
+  @Field(() => String)
+  genre!: MediaGenriesEnum;
+
+  @Field(() => String)
+  status!: MediaStatusEnum;
+
+  @Field(() => String)
+  backdropImageUrl!: string;
+
+  @Field(() => Number)
+  netProfit!: number;
+
+  @Field(() => Number)
+  budget!: number;
+
+  @Field(() => Number)
+  revenue!: number;
 }

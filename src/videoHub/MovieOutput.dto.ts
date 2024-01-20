@@ -28,7 +28,7 @@ export class GetManagerTableMovieListOutput {
   releaseDate!: number;
 
   @Field(() => String)
-  imageUrl!: string;
+  thumbnailUrl!: string;
 
   @Field(() => Number)
   likeCount!: number;
@@ -44,4 +44,43 @@ export class GetManagerTableMovieListOutput {
 export class MovieIdOutput {
   @Field(() => String)
   ID!: string;
+}
+
+@ObjectType()
+export class GetMovieDataForUpdateFormOutput {
+  @Field(() => String)
+  title!: string;
+
+  @Field(() => String)
+  plotSummary!: string;
+
+  @Field(() => Number)
+  releaseDate!: number;
+
+  @Field(() => String)
+  genre!: MediaGenriesEnum;
+
+  @Field(() => String)
+  status!: MediaStatusEnum;
+
+  @Field(() => String)
+  originCountry!: MediaCountriesEnum;
+
+  @Field(() => String)
+  originalLanguage!: MediaLanguagiesEnum;
+
+  @Field(() => String)
+  thumbnailUrl!: string;
+
+  @Field(() => Number)
+  netProfit!: number;
+
+  @Field(() => Number)
+  budget!: number;
+
+  @Field(() => Number)
+  revenue!: number;
+
+  @Field(() => String)
+  videoResourceId!: string;
 }
