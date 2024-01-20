@@ -6,8 +6,6 @@ export { MediaGenriesEnum } from "./AddtionalInfo.enum";
 export { MediaStatusEnum } from "./AddtionalInfo.enum";
 export { CloudinaryUploadInput } from "./CloudinaryInput.dto";
 export { ImageUrlOutput } from "./CloudinaryOutput.dto";
-export { CreateFinancialInfoInput } from "./FinancialInfoInput.dto";
-export { UpdateFinancialInfoInput } from "./FinancialInfoInput.dto";
 export { ImageVariantEnum } from "./Image.enum";
 export { Image } from "./Image.entity";
 export { ChangeImageInput } from "./ImageInput.dto";

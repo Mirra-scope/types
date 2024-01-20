@@ -2,7 +2,6 @@ import { Field, InputType } from "@nestjs/graphql";
 import { IsArray, IsNotEmpty, IsNumber, IsObject, IsOptional, IsString, IsUUID } from "class-validator";
 import { CreateAdditionalInfoInput, UpdateAdditionalInfoInput } from "./AdditionalInfoInput.dto";
 import { UpdateImageInput } from "./ImageInput.dto";
-import { CreateFinancialInfoInput, UpdateFinancialInfoInput } from ".";
 
 @InputType()
 export class CreateSeriesInput {
@@ -31,11 +30,6 @@ export class CreateSeriesInput {
   @IsObject()
   @IsNotEmpty()
   AdditionalInfo!: CreateAdditionalInfoInput;
-
-  @Field(() => CreateFinancialInfoInput)
-  @IsObject()
-  @IsNotEmpty()
-  FinancialInfo!: CreateFinancialInfoInput;
 }
 
 @InputType()
@@ -95,11 +89,6 @@ export class UpdateSeriesInput {
   @IsObject()
   @IsOptional()
   Image!: UpdateImageInput;
-
-  @Field(() => UpdateFinancialInfoInput, { nullable: true })
-  @IsObject()
-  @IsOptional()
-  FinancialInfo!: UpdateFinancialInfoInput;
 }
 
 @InputType()
