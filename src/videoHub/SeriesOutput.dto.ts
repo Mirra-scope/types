@@ -92,15 +92,6 @@ export class GetSeriesDetailsByIdOutput {
   @Field(() => Number)
   uploadDate!: number;
 
-  @Field(() => Number)
-  netProfit!: number;
-
-  @Field(() => Number)
-  budget!: number;
-
-  @Field(() => Number)
-  revenue!: number;
-
   @Field(() => Boolean)
   isFree!: boolean;
 }
@@ -130,13 +121,4 @@ export class GetSeriesDataForUpdateFormOutput {
 
   @Field(() => String)
   backdropImageUrl!: string;
-
-  @Field(() => Number)
-  netProfit!: number;
-
-  @Field(() => Number)
-  budget!: number;
-
-  @Field(() => Number)
-  revenue!: number;
 }

@@ -72,15 +72,6 @@ export class GetMovieDataForUpdateFormOutput {
   @Field(() => String)
   thumbnailUrl!: string;
 
-  @Field(() => Number)
-  netProfit!: number;
-
-  @Field(() => Number)
-  budget!: number;
-
-  @Field(() => Number)
-  revenue!: number;
-
   @Field(() => String)
   videoResourceId!: string;
 }
