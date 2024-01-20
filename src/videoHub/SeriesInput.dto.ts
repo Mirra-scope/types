@@ -43,6 +43,11 @@ export class GetManagerSeriesForTableInput {
   @IsNotEmpty()
   @IsNumber()
   PageSize!: number;
+
+  @Field(() => String)
+  @IsOptional()
+  @IsString()
+  SearchText!: string;
 }
 
 @InputType()
