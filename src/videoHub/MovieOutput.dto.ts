@@ -75,3 +75,39 @@ export class GetMovieDataForUpdateFormOutput {
   @Field(() => String)
   videoResourceId!: string;
 }
+
+@ObjectType()
+export class GetMovieDetailsByIdOutput {
+  @Field(() => String)
+  ID!: string;
+
+  @Field(() => String)
+  originCountry!: MediaCountriesEnum;
+
+  @Field(() => String)
+  originalLanguage!: MediaLanguagiesEnum;
+
+  @Field(() => String)
+  genre!: MediaGenriesEnum;
+
+  @Field(() => String)
+  status!: MediaStatusEnum;
+
+  @Field(() => String)
+  title!: string;
+
+  @Field(() => String)
+  plotSummary!: string;
+
+  @Field(() => Number)
+  releaseDate!: number;
+
+  @Field(() => String)
+  thumbnailUrl!: string;
+
+  @Field(() => Number)
+  uploadDate!: number;
+
+  @Field(() => Boolean)
+  isFree!: boolean;
+}
