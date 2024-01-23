@@ -16,15 +16,6 @@ export class GetManagerTableOutputSeriesList {
   ID!: string;
 
   @Field(() => String)
-  originCountry!: MediaCountriesEnum;
-
-  @Field(() => String)
-  originalLanguage!: MediaLanguagiesEnum;
-
-  @Field(() => String)
-  genre!: MediaGenriesEnum;
-
-  @Field(() => String)
   status!: MediaStatusEnum;
 
   @Field(() => String)
@@ -38,6 +29,12 @@ export class GetManagerTableOutputSeriesList {
 
   @Field(() => String)
   backdropImageUrl!: string;
+
+  @Field(() => Number)
+  likeCount!: number;
+
+  @Field(() => Number)
+  avarageRating!: number;
 
   @Field(() => Number)
   uploadDate!: number;
