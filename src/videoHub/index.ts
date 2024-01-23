@@ -40,8 +40,8 @@ export { Season } from "./Season.entity";
 export { ChangeSeasonSeriesInput } from "./SeasonInput.dto";
 export { CreateSeasonInput } from "./SeasonInput.dto";
 export { GetNextSeasonNumberParams } from "./SeasonInput.dto";
-export { GetSeasonBySeriesIdParams } from "./SeasonInput.dto";
 export { GetNextSeasonNumberOutput } from "./SeasonOutput.dto";
+export { GetSeasonBySeriesIdOutput } from "./SeasonOutput.dto";
 
 export { Series } from "./Series.entity";
 export { GetManagerSeriesForTableOutput } from "./SeriesOutput.dto";
